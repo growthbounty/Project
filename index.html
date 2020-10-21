@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 900px;
+            background: url('images/banner.jpg');
+
+        }
+
+        /* .navbar {
+            width: 100%;
+            height: 900px;
+            background: url('images/banner.jpg');
+
+
+        } */
+
+        .head {}
+
+        #left {
+            display: inline-block;
+            width: auto;
+            height: 15px;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+
+            /* border: black solid 1px; */
+
+        }
+
+        #left a {
+            line-height: 0;
+            text-decoration: none;
+            color: rgb(169, 170, 172);
+            font-size: 15px;
+            margin-top: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+
+        #left a:hover {
+            color: white;
+
+        }
+
+        img {
+            width: 55px;
+            height: 55px;
+            display: block;
+            position: relative;
+            left: 25px;
+            bottom: 10px;
+            filter: invert(100%);
+        }
+
+        #mid {
+            width: 50%;
+            display: block;
+            margin: auto;
+            position: relative;
+            top: 20px;
+            border: solid rgb(177, 177, 177) 2px;
+            border-radius: 36px;
+            /* background-color:rgb(230, 248, 66) ; */
+            text-align: center;
+            
+
+        }
+
+
+        .navigationbar li {
+            display: inline-block;
+            color: azure;
+
+        }
+
+        .navigationbar li a {
+            text-decoration: none;
+            color: rgba(202, 197, 197, 0.966);
+            padding: 0px 25px 0px;
+            font-size: 20px;
+
+        }
+
+        .navigationbar li a:hover {
+            color: rgb(255, 255, 255);
+
+
+        }
+
+        #right {
+            display: inline-block;
+            width: 300px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            color: azure;
+            /* border: rgb(236, 235, 235) solid 1px; */
+
+        }
+
+        .btn {
+            background-color: black;
+            border: white solid 1px;
+            color: white;
+            border-radius: 35px;
+            padding: 5px 20px;
+            display: block;
+            margin-left: 175px;
+            position: relative;
+            bottom: 10px;
+            /* padding-right:25px ; */
+            text-align: center;
+
+        }
+
+        #btn2 {
+
+            margin-top: 10px;
+            padding-right: 40px;
+        }
+
+        .btn:hover {
+            background-color: rgb(78, 77, 77);
+            cursor: pointer;
+        }
+
+        .wellcome {
+            border: white 1px solid;
+            border-radius: 10px;
+            color: white;
+            margin: 215px 67px;
+            padding: 50px 6px;
+            width: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .wellcome p {
+           color: rgb(158, 157, 158);
+        }
+        .wellcome:hover {
+         cursor: pointer;
+        }
+        .come{
+            display: block;
+            width: 60%;
+            margin:5px auto;
+            text-align: center;
+            width: 70%;
+            
+        }
+
+        .sub{
+            width: 150px;
+            display: block;
+            margin: 8px auto;
+            background-color: black;
+            color: white;
+            border: white solid 1.5px;
+            border-radius: 36px;
+            margin-top:15px ;
+            padding: 2%;
+            
+        }
+        .sub:hover{
+            
+            color: rgb(255, 255, 255);
+            background-color: rgb(128, 128, 128);
+        }
+        .title{
+            text-align: center;
+            margin: 2px 2px;
+            padding: 2px 2px;
+        }
+        .gender{
+            text-align: center;
+        }
+        .province{
+            text-align: center;
+        }
+        .form-group{
+            text-align: center;
+
+        }
+        .gender{
+            padding-top: px;
+        }
+        .devolper{
+            color: rgb(254, 254, 255);
+            /* border: 0.5px solid rgb(255, 254, 254);
+            border-radius: 360px; */
+            display: block;
+            width: 20%;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            position: fixed;
+            top: 820px;
+            right:-45px;
+            line-height: 5px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <header>
+            <div class="head" id="left">
+                <img src="images/growthbounty.png" alt="logo">
+                <a href="#">
+                    GROWTH BOUNTY
+                </a>
+            </div>
+            <div class="head" id="mid">
+                <ul class="navigationbar">
+                    <li class="list"> <a href="#">Home</a> </li>
+                    <li class="list"> <a href="#">Services</a> </li>
+                    <li class="list"> <a href="#">About</a> </li>
+                    <li class="list"> <a href="#">Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="head" id="right">
+                <button class="btn" id="btn1">Call Us Now</button>
+                <button class="btn" id="btn2">Email Us</button>
+            </div>
+        </header>
+        <div class="wellcome">
+           <h2 class="title"> Welcome to Technical World</h2>
+           <p class="title">
+               Please Fill This Form If You Are interested <br> in Technical Updates...
+           </p>
+           <form action="noactiojn.php" class="form-group">
+
+            <input type="text" class="come" placeholder="Enter Name">
+            <input type="number" class="come" placeholder="Enter Phone Number">
+            <input type="email" class="come" placeholder="Enter Email ID ">
+            <label for="mydate">
+               Date Of Birth
+    
+            </label>
+            <input type="date" class="come" id="mydate">
+
+            <label for="myeligibility">
+                Are you Above 18?
+    
+            </label>
+            <input type="checkbox" name="eligibility" id="myeligibility" checked>
+            <br>
+            <div class="province"><label for="myprovince">Select Your Province</label>
+               <br>
+                <select name="province" id="myprovince">
+                    <option value="pb" disabled>Punjab</option>
+                <option value="sn">Sindh</option>
+                <option value="bl">Balochistan</option>
+                <option value="kpk">Khyber Pakhtun Khawan</option>
+                <option value="ajk">Kashmir</option>
+                <option value="gb"selected >Gilgit Baltistan </option>
+                </select></div><br>
+            <div class="gender"><span> Gender</span>
+                <label for="mymale">Male</label>
+                <input type="radio" name="mymale" id="mymale" checked>
+                <label for="myfemale">Female</label>
+                <input type="radio" name="myfemale" id="myfemale">
+                <label for="myother">Other</label>
+                <input type="radio" name="myother" id="myother"></div>
+            
+            <button class="sub" id="sub1">Submit Now</button>
+           </form>
+        </div>
+              <div class="devolper">
+                  <h3 class="dev">devolper</h3>
+                  <p class="dev">Faryad Az Zim</p>
+              </div>
+
+</body>
+
+</html>
